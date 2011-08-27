@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<Module>
+  <ModulePrefs
+  author="Kenneth Endfinger"
+  author_link="http://gplus.to/kendfinger"
+  scrolling="false" > 
+  </ModulePrefs>
+<Content type="html"><![CDATA[
+<iframe id="groups_embed" src="javascript:void(0);" width="800" height="600" scrolling="no" frameborder="0"></iframe>
+<script type="text/javascript">
+  parentUrl = encodeURIComponent(window.location.href);
+  parentUrl = parentUrl.match(/https?:\/\/.+/) ? parentUrl : null;
+  document.getElementById("groups_embed").src = "https://groups.google.com/forum/embed/?place=forum%2Fchromebook-central&showsearch=true&theme=default" + (parentUrl ? ("&parenturl=" + parentUrl) : "");
+</script>
+]]></Content>
+</Module>
