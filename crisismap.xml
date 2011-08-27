@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<Module>
+  <ModulePrefs
+  author="Kenneth Endfinger"
+  author_link="http://gplus.to/kendfinger"
+  scrolling="false" > 
+  </ModulePrefs>
+<Content type="html"><![CDATA[
+<iframe src="http://crisislanding.appspot.com/?lat=40.21641879776387&lng=-69.5556640625&z=5&layers=1314426776390%2C1314426810619&t=roadmap&embedded=true"/iframe>
+]]></Content>
+</Module>
