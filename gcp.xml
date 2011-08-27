@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<Module>
+  <ModulePrefs
+  author="Kenneth Endfinger"
+  author_link="http://gplus.to/kendfinger"
+  scrolling="false" > 
+  </ModulePrefs>
+<UserPref name="pdf" display_name="Enter URL Of PDF" datatype="string" required="true"/>
+<UserPref name="title" display_name="Enter Title Of Print Job" datatype="string" required="true"/>
+<Content type="html"><![CDATA[
+<script>
+  var prefs = new gadgets.Prefs();
+  var pdfurl = prefs.getString("pdf");
+  var pdftitle = prefs.getInt("title");
+</script>
+<script src="http://www.google.com/cloudprint/client/cpgadget.js">
+</script>
+<script defer="defer">
+	var gadget = new cloudprint.Gadget();
+	gadget.setPrintButton(cloudprint.Gadget.createDefaultPrintButton("print_button_container"));
+	gadget.setPrintDocument("url", pdftitle, pdfurl);
+</script>
+]]></Content>
+</Module>
